@@ -1,0 +1,39 @@
+═══════════════════════════════════════════════════════
+  QUICK DEPLOY STEPS - Vercel Par Website Host Karne Ke
+═══════════════════════════════════════════════════════
+
+STEP 1: Vercel CLI Se Login
+─────────────────────────────
+Terminal mein ye command run karein:
+  vercel login
+
+Browser khul jayega, wahan email se login karein.
+
+
+STEP 2: Deploy Karein
+──────────────────────
+Terminal mein ye command run karein:
+  vercel
+
+Kuch questions puchenge:
+  - Set up and deploy? → Y (Yes)
+  - Which scope? → Apna account select karein
+  - Link to existing project? → N (No)
+  - Project name? → Enter press karein (default name use hoga)
+  - Directory? → ./ (current directory)
+  - Override settings? → N (No)
+
+2-3 minutes mein deploy ho jayega!
+
+
+STEP 3: Production Deploy (Optional)
+─────────────────────────────────────
+Agar production URL chahiye:
+  vercel --prod
+
+═══════════════════════════════════════════════════════
+  Aapko milega: https://your-project-name.vercel.app
+═══════════════════════════════════════════════════════
+
+YE URL KISI KO BHI BHEJ SAKTE HAIN! 🚀
+
