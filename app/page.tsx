@@ -21,7 +21,7 @@ export default function Home() {
                 </span>
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-                Pakistan's Trusted{' '}
+                Pakistan&apos;s Trusted{' '}
                 <span className="text-gold-600">Tax Litigation</span> &{' '}
                 <span className="text-gold-600">Consultancy Services</span>
               </h1>
@@ -62,7 +62,7 @@ export default function Home() {
                   </h3>
                   <p className="text-gray-700 mb-6">
                     With over 10 years of experience and millions in processed refunds, 
-                    we're your trusted partner for tax preparation and financial services.
+                    we&apos;re your trusted partner for tax preparation and financial services.
                   </p>
                   <div className="grid grid-cols-2 gap-4 mb-6">
                     <div className="text-center p-4 bg-gold-50 rounded-lg">
@@ -102,7 +102,7 @@ export default function Home() {
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               With over 10 years of experience and millions in processed refunds, 
-              we're your trusted partner for tax preparation and financial services.
+              we&apos;re your trusted partner for tax preparation and financial services.
             </p>
           </motion.div>
 

@@ -1,0 +1,19 @@
+═══════════════════════════════════════════════════════
+  DIRECT DEPLOY LINK (Already Logged In)
+═══════════════════════════════════════════════════════
+
+👉 CLICK HERE TO DEPLOY:
+https://vercel.com/new
+
+Steps:
+1. Link par click karein (aap already logged in honge)
+2. "Import Git Repository" section mein
+3. "matie-law-site" ya "haseeb577/matie-law-site" search karein
+4. Repository select karein
+5. "Import" click karein
+6. "Deploy" button click karein
+7. 2-3 minutes wait karein
+8. ✅ Done! URL mil jayega
+
+═══════════════════════════════════════════════════════
+

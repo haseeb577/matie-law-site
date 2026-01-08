@@ -127,8 +127,8 @@ export default function About() {
             >
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
               <p className="text-lg text-gray-700 italic">
-                "To provide expert tax and legal solutions that transform challenges into opportunities, 
-                ensuring compliance, growth, and success for our clients across Pakistan."
+                &ldquo;To provide expert tax and legal solutions that transform challenges into opportunities, 
+                ensuring compliance, growth, and success for our clients across Pakistan.&rdquo;
               </p>
             </motion.div>
           </div>
@@ -179,7 +179,7 @@ export default function About() {
               Why Choose Gavel Legal Services?
             </h2>
             <p className="text-lg text-gray-600">
-              Our track record speaks for itself, but here's what sets us apart from the competition.
+              Our track record speaks for itself, but here&apos;s what sets us apart from the competition.
             </p>
           </motion.div>
 
