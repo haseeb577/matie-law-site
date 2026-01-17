@@ -15,9 +15,12 @@ export default function Home() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <div className="mb-6">
-                <span className="inline-block px-4 py-2 bg-gold-100 text-gold-700 rounded-full text-sm font-semibold mb-4">
+              <div className="mb-6 flex flex-wrap gap-3">
+                <span className="inline-block px-4 py-2 bg-gold-100 text-gold-700 rounded-full text-sm font-semibold">
                   Established 2015
+                </span>
+                <span className="inline-block px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold">
+                  Serving Clients Worldwide
                 </span>
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
@@ -36,16 +39,16 @@ export default function Home() {
                   href="https://wa.me/923236661110"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-gold-500 hover:bg-gold-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl text-center"
+                  className="bg-gold-600 hover:bg-gold-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl text-center"
                 >
-                  📞 Call / WhatsApp: +92 323 666 1110
+                  📞 Call: +92-339-2007160 | WhatsApp: +92-323-6661110
                 </a>
-                <Link
-                  href="/quote"
-                  className="bg-white hover:bg-gray-50 text-gold-600 border-2 border-gold-500 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl text-center"
-                >
-                  Get Free Quote
-                </Link>
+            <Link
+              href="/quote"
+              className="bg-white hover:bg-gray-50 text-gold-600 border-2 border-gold-600 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl text-center"
+            >
+              Get Free Quote
+            </Link>
               </div>
             </motion.div>
 
@@ -55,7 +58,7 @@ export default function Home() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="relative"
             >
-              <div className="bg-gradient-to-br from-gold-400 to-gold-600 rounded-2xl p-8 shadow-2xl">
+              <div className="bg-gradient-to-br from-gold-500 to-gold-600 rounded-2xl p-8 shadow-2xl">
                 <div className="bg-white rounded-xl p-8">
                   <h3 className="text-2xl font-bold text-gray-900 mb-4">
                     Why Millions Trust Gavel Legal Services
@@ -76,7 +79,7 @@ export default function Home() {
                   </div>
                   <Link
                     href="/services"
-                    className="block w-full bg-gold-500 hover:bg-gold-600 text-white px-6 py-3 rounded-lg font-semibold text-center transition-all duration-200"
+                    className="block w-full bg-gold-600 hover:bg-gold-700 text-white px-6 py-3 rounded-lg font-semibold text-center transition-all duration-200"
                   >
                     Get Started
                   </Link>
@@ -142,7 +145,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-gold-500 to-gold-600">
+      <section className="py-16 bg-gradient-to-r from-gold-600 to-gold-700">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -159,16 +162,16 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href="/quote"
+                href="/calculator"
                 className="bg-white hover:bg-gray-50 text-gold-600 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl"
               >
-                Estimate Your Tax
+                Tax Calculator
               </Link>
               <a
                 href="https://wa.me/923236661110"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gold-700 hover:bg-gold-800 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl"
+                className="bg-gold-800 hover:bg-gold-900 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl"
               >
                 Contact Us Now
               </a>
@@ -194,8 +197,8 @@ export default function Home() {
               Explore financing options and quickly estimate your Tax
             </p>
             <Link
-              href="/quote"
-              className="inline-block bg-gold-500 hover:bg-gold-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl"
+              href="/calculator"
+              className="inline-block bg-gold-600 hover:bg-gold-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl"
             >
               Use Tax Calculator
             </Link>

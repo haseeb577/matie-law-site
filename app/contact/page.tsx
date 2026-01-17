@@ -70,8 +70,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Phone</h3>
-                    <a href="tel:+923236661110" className="text-gray-700 hover:text-gold-600 transition-colors">
-                      +92 323 666 1110
+                    <a href="tel:+923392007160" className="text-gray-700 hover:text-gold-600 transition-colors">
+                      +92-339-2007160
                     </a>
                   </div>
                 </div>
@@ -90,8 +90,37 @@ export default function Contact() {
                       rel="noopener noreferrer"
                       className="text-gray-700 hover:text-gold-600 transition-colors"
                     >
-                      Chat with us on WhatsApp
+                      +92-323-6661110
                     </a>
+                  </div>
+                </div>
+
+                <div className="flex items-start space-x-4">
+                  <div className="bg-gold-100 p-3 rounded-lg">
+                    <svg className="w-6 h-6 text-gold-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
+                    <a href="mailto:gavellegalservices@gmail.com" className="text-gray-700 hover:text-gold-600 transition-colors">
+                      gavellegalservices@gmail.com
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-start space-x-4">
+                  <div className="bg-gold-100 p-3 rounded-lg">
+                    <svg className="w-6 h-6 text-gold-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-gray-900 mb-1">Office Address</h3>
+                    <p className="text-gray-700">Room No.3, 2nd Floor, Niazi Building</p>
+                    <p className="text-gray-700">42/8, Lower Mall, Near New Judicial Complex</p>
+                    <p className="text-gray-700">Lahore, Punjab, Pakistan</p>
                   </div>
                 </div>
 
@@ -225,10 +254,10 @@ export default function Contact() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:+923236661110"
+                href="tel:+923392007160"
                 className="bg-white hover:bg-gray-50 text-gold-600 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl"
               >
-                Call Now
+                Call: +92-339-2007160
               </a>
               <a
                 href="https://wa.me/923236661110"

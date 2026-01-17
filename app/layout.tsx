@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import { WebsiteDisclaimer } from '@/components/Disclaimer'
 
 export const metadata: Metadata = {
   title: 'Gavel Legal Services - Pakistan\'s Trusted Tax Litigation & Consultancy',
@@ -25,6 +26,7 @@ export default function RootLayout({
       <body>
         <Navbar />
         <main>{children}</main>
+        <WebsiteDisclaimer />
         <Footer />
       </body>
     </html>
