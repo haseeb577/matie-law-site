@@ -4,38 +4,61 @@ import { motion } from 'framer-motion'
 import Link from 'next/link'
 
 export default function Services() {
-  const services = [
+  const practiceAreas = [
     {
-      title: 'Tax Preparation Services',
-      description: 'Comprehensive tax filing for individuals and businesses with maximum IRS-allowed refunds guaranteed.',
-      features: [
-        'Individual and business tax returns',
-        'Maximum IRS-allowed refunds guaranteed',
-        'E-filing with fast processing',
-        'Audit assistance included',
-        'Amendment and correction services',
+      title: 'Taxation Laws of Pakistan',
+      description: 'Comprehensive tax services under Pakistani tax laws',
+      services: [
+        'Income Tax (Income Tax Ordinance, 2001)',
+        'Sales Tax (Sales Tax Act, 1990)',
+        'Federal Excise & PRA / SRB matters',
+        'FBR Audits, Notices, Appeals, and Litigation',
+        'ATIR, High Court Tax References',
       ],
-      icon: '📋',
-    },
-    {
-      title: 'Income Tax & Sales Tax Returns',
-      description: 'Professional filing and management of all tax returns.',
       icon: '📊',
     },
     {
-      title: 'Litigation',
-      description: 'Expert representation in tax disputes and appeals.',
+      title: 'For Overseas Pakistanis',
+      description: 'Specialized services for Pakistanis living abroad',
+      services: [
+        'Tax filing and asset declaration in Pakistan',
+        'FBR notices received while residing abroad',
+        'Property tax issues in Pakistan',
+        'Remittance and foreign income treatment',
+        'Representation before FBR without physical presence',
+      ],
+      icon: '🌍',
+    },
+    {
+      title: 'Corporate & Commercial Advisory',
+      description: 'Corporate legal services and compliance',
+      services: [
+        'Company incorporation (SECP)',
+        'Tax structuring for foreign-owned entities',
+        'Withholding tax compliance',
+        'Cross-border service taxation',
+        'Joint ventures and regulatory approvals',
+      ],
+      icon: '🏢',
+    },
+    {
+      title: 'Litigation & Representation',
+      description: 'Expert representation in all tax and legal matters',
+      services: [
+        'Commissioner Appeals',
+        'Appellate Tribunal Inland Revenue (ATIR)',
+        'High Court constitutional petitions',
+        'Stay of recovery & bank account de-attachments',
+      ],
       icon: '⚖️',
     },
+  ]
+
+  const otherServices = [
     {
       title: 'Tax Refunds, Compliance & Advisory',
       description: 'Comprehensive tax refund services and compliance advisory.',
       icon: '💰',
-    },
-    {
-      title: 'Representation before FBR & Courts',
-      description: 'Professional representation before Federal Board of Revenue and courts.',
-      icon: '🏛️',
     },
     {
       title: 'Federal Tax Ombudsman (FTO) Matters',
@@ -62,11 +85,6 @@ export default function Services() {
       description: 'Assistance with all business and regulatory license requirements.',
       icon: '📜',
     },
-    {
-      title: 'Remote Legal & Administrative Support',
-      description: 'Remote legal and administrative support for international clients.',
-      icon: '🌐',
-    },
   ]
 
   return (
@@ -81,37 +99,36 @@ export default function Services() {
             className="text-center"
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-              <span className="text-gold-600">SERVICES</span>
+              <span className="text-gold-600">PRACTICE AREAS</span>
             </h1>
-            <div className="w-24 h-1 bg-gold-500 mx-auto mb-8"></div>
+            <div className="w-24 h-1 bg-gold-600 mx-auto mb-8"></div>
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
-              COMPLETE FINANCIAL SERVICES
+              Pakistan-Centric but Internationally Relevant
             </h2>
             <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto mb-8">
-              From tax preparation to refunds, we offer comprehensive financial services to help 
-              you maximize your money and improve your financial future.
+              Professional legal and tax services under Pakistani law, serving clients nationwide and internationally.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="https://wa.me/923236661110"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gold-500 hover:bg-gold-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl"
+                className="bg-gold-600 hover:bg-gold-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl"
               >
                 Get Free Consultation
               </a>
               <Link
-                href="/contact"
-                className="bg-white hover:bg-gray-50 text-gold-600 border-2 border-gold-500 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl"
+                href="/international"
+                className="bg-white hover:bg-gray-50 text-gold-600 border-2 border-gold-600 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl"
               >
-                Compare Services
+                International Clients
               </Link>
             </div>
           </motion.div>
         </div>
       </section>
 
-      {/* Main Service - Tax Preparation */}
+      {/* Core Practice Areas */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -119,36 +136,54 @@ export default function Services() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="bg-gradient-to-br from-gold-50 to-gold-100 rounded-2xl p-8 md:p-12 mb-16"
+            className="text-center mb-12"
           >
-            <div className="flex items-start space-x-4 mb-6">
-              <div className="text-5xl">{services[0].icon}</div>
-              <div className="flex-1">
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                  {services[0].title}
-                </h2>
-                <p className="text-lg text-gray-700 mb-6">
-                  {services[0].description}
-                </p>
-                <ul className="space-y-3">
-                  {services[0].features?.map((feature, index) => (
-                    <li key={index} className="flex items-start">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Core Practice Areas
+            </h2>
+            <p className="text-lg text-gray-600">
+              Specialized legal services under Pakistani law
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+            {practiceAreas.map((area, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                className="bg-gradient-to-br from-gold-50 to-gold-100 rounded-xl p-8 border border-gold-200"
+              >
+                <div className="flex items-start space-x-4 mb-6">
+                  <div className="text-5xl">{area.icon}</div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                      {area.title}
+                    </h3>
+                    <p className="text-gray-700 mb-4">{area.description}</p>
+                  </div>
+                </div>
+                <ul className="space-y-2">
+                  {area.services.map((service, idx) => (
+                    <li key={idx} className="flex items-start">
                       <span className="text-gold-600 mr-3 mt-1">✓</span>
-                      <span className="text-gray-700">{feature}</span>
+                      <span className="text-gray-700">{service}</span>
                     </li>
                   ))}
                 </ul>
-              </div>
-            </div>
-          </motion.div>
+              </motion.div>
+            ))}
+          </div>
 
-          {/* Other Services Grid */}
+          {/* Other Services */}
           <div>
             <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 text-center">
-              OTHER SERVICES
+              Additional Services
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {services.slice(1).map((service, index) => (
+              {otherServices.map((service, index) => (
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, y: 30 }}
@@ -170,7 +205,7 @@ export default function Services() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-gold-500 to-gold-600">
+      <section className="py-16 bg-gradient-to-r from-gold-600 to-gold-700">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -195,7 +230,7 @@ export default function Services() {
               </a>
               <Link
                 href="/about"
-                className="bg-gold-700 hover:bg-gold-800 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl"
+                className="bg-gold-800 hover:bg-gold-900 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl"
               >
                 Learn More
               </Link>
@@ -206,4 +241,3 @@ export default function Services() {
     </div>
   )
 }
-
