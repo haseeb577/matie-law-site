@@ -287,7 +287,7 @@ export default function Quote() {
                 href="tel:+923236661110"
                 className="bg-gold-500 hover:bg-gold-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl"
               >
-                Call Us: +92 323 666 1110
+                Call: +92-339-2007160
               </a>
               <a
                 href="https://wa.me/923236661110"

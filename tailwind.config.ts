@@ -10,16 +10,16 @@ const config: Config = {
     extend: {
       colors: {
         gold: {
-          50: '#fffef7',
-          100: '#fffcee',
-          200: '#fff8d6',
-          300: '#fff3bd',
-          400: '#ffe88a',
-          500: '#ffdd57',
-          600: '#e6c74e',
-          700: '#ccb145',
-          800: '#b39b3c',
-          900: '#998533',
+          50: '#fefdf8',
+          100: '#fdf9eb',
+          200: '#faf2d3',
+          300: '#f6e8b5',
+          400: '#f0d67d',
+          500: '#d4af37', // More muted, professional gold
+          600: '#b8941f',
+          700: '#9a7a1a',
+          800: '#7d6115',
+          900: '#654d11',
         },
         gray: {
           custom: '#f5f5f5',

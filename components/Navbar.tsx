@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
+import { LogoSVG } from './Logo'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -19,9 +20,11 @@ export default function Navbar() {
   const navLinks = [
     { href: '/', label: 'Home' },
     { href: '/services', label: 'Services' },
+    { href: '/international', label: 'International Clients' },
+    { href: '/blog', label: 'Blog' },
+    { href: '/calculator', label: 'Tax Calculator' },
     { href: '/about', label: 'About' },
     { href: '/contact', label: 'Contact' },
-    { href: '/quote', label: 'Free Quote' },
   ]
 
   return (
@@ -33,26 +36,8 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-gradient-to-br from-gold-500 to-gold-700 rounded-lg flex items-center justify-center shadow-md">
-              <svg
-                className="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                />
-              </svg>
-            </div>
-            <div className="hidden sm:block">
-              <div className="text-xl font-bold text-gray-900">GAVEL LEGAL</div>
-              <div className="text-xs text-gold-600 font-medium">LEGAL SERVICES</div>
-            </div>
+          <Link href="/">
+            <LogoSVG />
           </Link>
 
           {/* Desktop Navigation */}
@@ -66,14 +51,14 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <a
-              href="https://wa.me/923236661110"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-gold-500 hover:bg-gold-600 text-white px-6 py-2 rounded-lg font-semibold transition-all duration-200 shadow-md hover:shadow-lg"
-            >
-              Contact Us
-            </a>
+              <a
+                href="https://wa.me/923236661110"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gold-600 hover:bg-gold-700 text-white px-6 py-2 rounded-lg font-semibold transition-all duration-200 shadow-md hover:shadow-lg"
+              >
+                Contact Us
+              </a>
           </div>
 
           {/* Mobile Menu Button */}

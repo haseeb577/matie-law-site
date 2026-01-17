@@ -41,7 +41,7 @@ export default function About() {
     },
     {
       question: 'How do I start working with The Gavel Legal Services?',
-      answer: 'You can contact us by Call or WhatsApp at +92 323 666 1110 or send your inquiry through our website contact form. We will arrange a detailed consultation to understand your tax or legal needs.',
+      answer: 'You can contact us by Call at +92-339-2007160 or WhatsApp at +92-323-6661110, or send your inquiry through our website contact form. We will arrange a detailed consultation to understand your tax or legal needs.',
     },
     {
       question: 'What documents should I prepare for a tax consultation?',
@@ -265,10 +265,10 @@ export default function About() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:+923236661110"
+                href="tel:+923392007160"
                 className="bg-white hover:bg-gray-50 text-gold-600 px-8 py-3 rounded-lg font-semibold transition-all duration-200"
               >
-                +92-323-6661110
+                +92-339-2007160
               </a>
               <a
                 href="https://wa.me/923236661110"
